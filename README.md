@@ -5,13 +5,33 @@
 
 MCP server to perform a Trivy scan and produce an SBOM in CycloneDX format.
 
+## Installation
+
 ### Prerequisites
 
-- [Node.js](https://nodejs.org/en)
-- [trivy](https://github.com/aquasecurity/trivy)
-- [uv](https://github.com/astral-sh/uv)
+Install the following.
 
-## Development
+- [uv](https://github.com/astral-sh/uv)
+- [trivy](https://github.com/aquasecurity/trivy)
+- [Node.js](https://nodejs.org/en)
+
+## MCP Clients
+
+### Configuration
+
+```json
+"mcpServers": {
+        "mcp-sbom": {
+            "command": "uv",
+            "args": [
+                "--directory",
+                "/path/to/mcp-sbom",
+                "run",
+                "mcp-sbom"
+            ]
+        }
+    }
+```
 
 ## Building
 
@@ -25,6 +45,8 @@ uv sync
 
 ## Debugging
 
+### MCP Inspector
+
 Use [MCP Inspector](https://github.com/modelcontextprotocol/inspector).
 
 Launch the MCP Inspector as follows:
@@ -34,3 +56,11 @@ npx @modelcontextprotocol/inspector uv --directory /path/to/mcp-sbom run mcp-sbo
 ```
 
 ![MCP Inspector](docs/mcp-inspector.png)
+
+### Windows
+
+When running on Windows, use paths of the style:
+
+```console
+C:/Users/gkh/src/mcp-sbom-server/src/mcp_sbom
+```
