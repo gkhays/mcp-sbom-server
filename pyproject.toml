@@ -1,0 +1,13 @@
+[project]
+name = "mcp-sbom"
+version = "0.1.0"
+description = "MCP server to perform a scan and produce an SBOM"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "mcp[cli]>=1.6.0",
+    "python-dotenv>=1.0.1",
+]
+
+[project.scripts]
+mcp-sbom = "mcp_sbom.main"
