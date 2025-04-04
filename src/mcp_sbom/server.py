@@ -58,10 +58,9 @@ async def scan(image: str):
         logger.error(f"Exception in trivy tool: {str(e)}")
         return f"Error: {str(e)}"
 
-if __name__ == "__main__":
+# if __name__ == "__main__":
+def main():
     logger.info("Starting SBOM MCP Server!")
-    # Avoid issues with event loops
-    # from mcp.server.stdio import stdio_server
 
     try:
         mcp.run(transport="stdio")

@@ -9,5 +9,14 @@ dependencies = [
     "python-dotenv>=1.0.1",
 ]
 
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[dependency-groups]
+dev = [
+    "pyright>=1.1.389",
+]
+
 [project.scripts]
-mcp-sbom = "mcp_sbom.main"
+mcp-sbom = "mcp_sbom:main"
