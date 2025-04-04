@@ -1,5 +1,8 @@
 # MCP SBOM Server
 
+[![Python](https://img.shields.io/badge/Python-3.12-blue.svg)](https://www.python.org/)
+[![MCP](https://img.shields.io/badge/MCP-1.6-CC5500.svg)](https://www.anthropic.com/news/model-context-protocol)
+
 MCP server to perform a Trivy scan and produce an SBOM in CycloneDX format.
 
 ### Prerequisites
