@@ -18,3 +18,5 @@ Launch the MCP Inspector as follows:
 cd src/mcp_sbom
 npx @modelcontextprotocol/inspector uv run server.py
 ```
+
+![MCP Inspector](docs/mcp-inspector.png)
