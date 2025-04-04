@@ -8,6 +8,18 @@ MCP server to perform a Trivy scan and produce an SBOM in CycloneDX format.
 - [trivy](https://github.com/aquasecurity/trivy)
 - [uv](https://github.com/astral-sh/uv)
 
+## Development
+
+## Building
+
+> [!NOTE]
+> This project employs `uv`.
+
+1. Synchronize dependencies and update the lockfile.
+```
+uv sync
+```
+
 ## Debugging
 
 Use [MCP Inspector](https://github.com/modelcontextprotocol/inspector).
