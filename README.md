@@ -1,11 +1,20 @@
 # MCP SBOM Server
 
+[![smithery badge](https://smithery.ai/badge/@gkhays/mcp-sbom-server)](https://smithery.ai/server/@gkhays/mcp-sbom-server)
 [![Python](https://img.shields.io/badge/Python-3.12-blue.svg)](https://www.python.org/)
 [![MCP](https://img.shields.io/badge/MCP-1.6-CC5500.svg)](https://www.anthropic.com/news/model-context-protocol)
 
 MCP server to perform a Trivy scan and produce an SBOM in CycloneDX format.
 
 ## Installation
+
+### Installing via Smithery
+
+To install SBOM Server for Claude Desktop automatically via [Smithery](https://smithery.ai/server/@gkhays/mcp-sbom-server):
+
+```bash
+npx -y @smithery/cli install @gkhays/mcp-sbom-server --client claude
+```
 
 ### Prerequisites
 
